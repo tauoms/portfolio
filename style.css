@@ -80,7 +80,7 @@ nav ul {
 nav a {
   font-size: 20px;
   font-weight: 300;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 nav a:hover {
@@ -118,15 +118,22 @@ nav li:hover {
 .icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 60px;
 }
 
+.icons h2 {
+  margin: 0;
+  padding: 0;
+}
+
 i {
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 i:hover {
   color: #eaeeec;
+  transform: translateY(-4px);
 }
 
 header h1,
