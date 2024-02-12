@@ -14,7 +14,7 @@ function greetVisitor () {
     else if (currentHour < 21) todIndex = 2;
     else todIndex = 3;
 
-    greetingOutput.textContent = `${weekDays[currentDay]} ${timesOfDay[todIndex]}.`;
+    greetingOutput.textContent = `${weekDays[currentDay]} ${timesOfDay[todIndex]}`;
 }
 
 greetVisitor();
