@@ -168,8 +168,7 @@ header h2 {
 /* ----- Main ----- */
 
 main h2,
-footer h2,
-main h3 {
+footer h2 {
   display: block;
   letter-spacing: 1px;
   color: #d1d1d1;
@@ -244,8 +243,14 @@ section {
   padding-bottom: 1rem;
 }
 
+.project-card h3 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
 .project-card p {
-  margin-top: 1rem;
+  margin: 0.5rem 0 0.25rem;
   line-height: 1.3;
   font-size: smaller;
 }
@@ -256,7 +261,7 @@ section {
 
 .tech {
   font-size: smaller;
-  font-style: italic;
+  /* font-style: italic; */
   margin-top: 0.5rem;
 }
 
@@ -365,6 +370,7 @@ label {
   bottom: 2em;
   left: 2em;
   transition: 0.3s;
+  /* mix-blend-mode: exclusion; */
 }
 
 /* #back-to-top i {
@@ -389,3 +395,25 @@ footer h2 {
 #greeting {
   color: #c7d1cc;
 }
+
+/* .project-card-test {
+  display: flex;
+  background-image: url(images/image03.webp);
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+.project-card-test h2,
+.project-card-test h3 {
+  font-size: 16px;
+  background-color: #28332e;
+  opacity: 0.7;
+  padding: 4px;
+}
+
+.project-card-test h3 {
+  font-size: 14px;
+  align-self: flex-end;
+  justify-self: flex-end;
+} */
