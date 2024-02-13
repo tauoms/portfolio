@@ -165,6 +165,19 @@ header h2 {
   font-size: 30px;
 }
 
+#fswds {
+  animation: pulse 2s ease-in-out 1.5s 1 forwards;
+}
+
+@keyframes pulse {
+  0% {
+    color: #9aaca3;
+  }
+  100% {
+    color: #c7d1cc;
+  }
+}
+
 /* ----- Main ----- */
 
 main h2,
