@@ -320,6 +320,74 @@ section {
   background-color: #333;
 } */
 
+/* ----- Skills ----- */
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background-color: #6e8779;
+  background: linear-gradient(0deg, #28332e -10%, #6e8779 80%);
+
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.skill-card:nth-child(even) {
+  background-color: #876e87;
+  background: linear-gradient(0deg, #312833 -10%, #876e87 80%);
+}
+
+.skill-card p {
+  color: #28332e;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.skill-container {
+  display: block;
+  width: 100%;
+  background-color: #28332e;
+  border-radius: 25px;
+}
+
+.skill-card i {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding: 4px 4px;
+  color: #9aaca3;
+  font-size: smaller;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.html,
+.css,
+.js,
+.php {
+  background-color: #384741;
+}
+
+.html,
+.css {
+  width: 70%;
+}
+
+.js {
+  width: 30%;
+}
+
+.php {
+  width: 20%;
+}
+
 /* ----- Footer ----- */
 footer {
   display: flex;
