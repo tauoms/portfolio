@@ -194,7 +194,7 @@ h4:first-child {
 h4:nth-child(2) {
   /* align-self: flex-end; */
   position: relative;
-  animation: lateral 2.5s ease-out 0.4s 1 backwards;
+  animation: rise 2.5s ease-out 0.4s 1 backwards;
 
   /* top: 40px;
   left: 100px; */
@@ -215,7 +215,7 @@ h4:nth-child(2) {
   }
 }
 
-@keyframes lateral {
+@keyframes rise {
   0% {
     /* right: -300px; */
     bottom: -100px;
