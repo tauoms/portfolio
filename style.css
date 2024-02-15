@@ -178,6 +178,25 @@ header h2 {
   }
 }
 
+h4 {
+  font-size: 69px;
+  font-weight: 200;
+}
+
+h4:first-child {
+  /* align-self: flex-start; */
+  position: relative;
+  top: 33px;
+  right: 175.4px;
+}
+
+h4:nth-child(2) {
+  /* align-self: flex-end; */
+  position: relative;
+  /* top: 40px;
+  left: 100px; */
+}
+
 /* ----- Main ----- */
 
 main h2,
@@ -223,7 +242,7 @@ section {
 
 .third {
   background: #1c221f;
-  background: linear-gradient(0deg, #1c221f 0%, #50304e 80%);
+  background: linear-gradient(0deg, #1c221f 0%, #50304e 70%);
 }
 
 .project-card-container {
@@ -338,9 +357,9 @@ section {
   height: 160px;
   background-color: #6e8779;
   background: linear-gradient(0deg, #28332e -10%, #6e8779 80%);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px 20px;
-  box-shadow: 0 8px 32px 0 rgba(96, 22, 69, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(94, 34, 72, 0.37);
 }
 
 .skill-card:nth-child(even) {
@@ -357,7 +376,7 @@ section {
 .skill-container {
   display: block;
   width: 100%;
-  background-color: #28332e;
+  background: linear-gradient(0deg, #28332e 0%, #181e1c 100%);
   border-radius: 25px;
 }
 
