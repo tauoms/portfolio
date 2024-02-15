@@ -112,7 +112,7 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   padding: 14rem 0;
-  animation: fadein 1s ease-out;
+  /* animation: fadein 1s ease-out; */
 }
 
 @keyframes fadein {
@@ -166,7 +166,7 @@ header h2 {
 }
 
 #fswds {
-  animation: pulse 1.5s ease-in-out 2s 1 forwards;
+  animation: pulse 1.5s ease-in-out 3.2s 1 forwards;
 }
 
 @keyframes pulse {
@@ -188,13 +188,45 @@ h4:first-child {
   position: relative;
   top: 33px;
   right: 175.4px;
+  animation: drop 2.5s ease-out 1s 1 backwards;
 }
 
 h4:nth-child(2) {
   /* align-self: flex-end; */
   position: relative;
+  animation: lateral 2.5s ease-out 0.4s 1 backwards;
+
   /* top: 40px;
   left: 100px; */
+}
+
+@keyframes drop {
+  0% {
+    top: -30px;
+    /* right: 375.4px; */
+
+    opacity: 0;
+  }
+  100% {
+    top: 33px;
+    /* right: 175.4px; */
+
+    opacity: 1;
+  }
+}
+
+@keyframes lateral {
+  0% {
+    /* right: -300px; */
+    bottom: -100px;
+    opacity: 0;
+  }
+
+  100% {
+    /* right: 0; */
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 /* ----- Main ----- */
