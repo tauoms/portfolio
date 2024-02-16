@@ -189,7 +189,7 @@ h4:first-child {
   /* align-self: flex-start; */
   position: relative;
   top: 33px;
-  right: 175.4px;
+  right: 175.45px;
   animation: drop 2.5s ease-out 1s 1 backwards;
 }
 
@@ -284,7 +284,7 @@ section {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
 }
 
 .project-card {
