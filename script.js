@@ -1,3 +1,12 @@
+const backToTopBtn = document.querySelector('#back-to-top');
+
+const getToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+} 
+
+backToTopBtn.addEventListener('click', getToTop);
+
 const greetingOutput = document.querySelector('#greeting');
 
 function greetVisitor () {
