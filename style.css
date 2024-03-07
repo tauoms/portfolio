@@ -69,6 +69,10 @@ header {
   margin-right: 30px;
 }
 
+.header-name a:hover {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   flex: 4;
@@ -405,6 +409,7 @@ section {
   color: #28332e;
   font-weight: 400;
   font-size: medium;
+  margin: 10px 0 0;
 }
 
 .skill-container {
@@ -465,7 +470,7 @@ footer {
 footer h6 {
   font-size: 14px;
   font-weight: 300;
-  color: #767474;
+  color: #c7d1cc;
   /* letter-spacing: 1.5px; */
   text-align: center;
 }
@@ -524,6 +529,7 @@ label {
 
 #back-to-top:hover {
   transform: scale(1.25);
+  cursor: pointer;
 }
 
 #back-to-top a {
