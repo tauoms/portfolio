@@ -467,7 +467,7 @@ footer {
   padding: 40px 0 10px;
 }
 
-footer h1 {
+footer h2 {
   font-size: 14px;
   font-weight: 300;
   color: #c7d1cc;
@@ -536,11 +536,12 @@ label {
   color: #c7d1cc;
 }
 
-footer h2 {
+footer h1 {
   font-size: 30px;
   color: #9aaca3;
   margin: 10rem 0 18rem;
   line-height: 2;
+  font-weight: 300;
 }
 
 #greeting {
