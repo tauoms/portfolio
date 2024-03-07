@@ -5,7 +5,6 @@ const getToTop = () => {
     document.documentElement.scrollTop = 0;
 } 
 
-backToTopBtn.addEventListener('click', getToTop);
 
 const greetingOutput = document.querySelector('#greeting');
 
@@ -27,3 +26,5 @@ function greetVisitor () {
 }
 
 greetVisitor();
+
+backToTopBtn.addEventListener('click', getToTop);

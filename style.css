@@ -237,15 +237,15 @@ header h3 {
 
 /* ----- Main ----- */
 
-main h4,
-footer h4 {
+h4,
+footer h1 {
   display: block;
   letter-spacing: 1px;
   color: #d1d1d1;
   font-weight: 300;
 }
 
-main h4 {
+h4 {
   font-size: 30px;
   border-bottom: solid 1px;
   padding-bottom: 0.3rem;
@@ -299,12 +299,13 @@ section {
   border: solid 1px #33423b;
   border-radius: 10px;
   padding: 14px;
-  transition: transform 0.6s, background-color 0.6s;
+  transition: all 0.6s;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
   background-color: #33423b;
+  box-shadow: 0 0 20px #6e8779;
 }
 
 .project-card img {
@@ -397,7 +398,7 @@ section {
   background: linear-gradient(0deg, #28332e -10%, #6e8779 80%);
   border-radius: 10px;
   padding: 10px 20px;
-  box-shadow: 0 8px 32px 0 rgba(94, 34, 72, 0.37);
+  box-shadow: 0 0 32px rgba(94, 34, 72, 0.37);
 }
 
 .skill-card:nth-child(even) {
@@ -407,9 +408,9 @@ section {
 
 .skill-card p {
   color: #28332e;
-  font-weight: 400;
-  font-size: medium;
-  margin: 10px 0 0;
+  font-weight: 500;
+  font-size: large;
+  margin: 20px 0 0;
 }
 
 .skill-container {
@@ -422,7 +423,6 @@ section {
 .skill-card i {
   display: block;
   color: #28332e;
-  margin-bottom: 20px;
 }
 
 .skills {
