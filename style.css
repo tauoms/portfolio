@@ -154,7 +154,7 @@ nav li:hover {
 }
 
 header h1,
-header h2 {
+header h3 {
   color: #9aaca3;
   letter-spacing: 1.5px;
   font-weight: 300;
@@ -164,7 +164,7 @@ header h1 {
   font-size: 20px;
 }
 
-header h2 {
+header h3 {
   padding: 5rem 0;
   font-size: 30px;
   margin-left: 16.5rem;
@@ -183,13 +183,13 @@ header h2 {
   }
 }
 
-h4 {
+.welcome-text h2 {
   font-size: 69px;
   font-weight: 200;
   color: #9aaca3;
 }
 
-h4:first-child {
+.welcome-text h2:first-child {
   /* align-self: flex-start; */
   position: relative;
   top: 33px;
@@ -197,7 +197,7 @@ h4:first-child {
   animation: drop 2.5s ease-out 1s 1 backwards;
 }
 
-h4:nth-child(2) {
+.welcome-text h2:nth-child(2) {
   /* align-self: flex-end; */
   position: relative;
   animation: rise 2.5s ease-out 0.3s 1 backwards;
@@ -237,15 +237,15 @@ h4:nth-child(2) {
 
 /* ----- Main ----- */
 
-main h2,
-footer h2 {
+main h4,
+footer h4 {
   display: block;
   letter-spacing: 1px;
   color: #d1d1d1;
   font-weight: 300;
 }
 
-main h2 {
+main h4 {
   font-size: 30px;
   border-bottom: solid 1px;
   padding-bottom: 0.3rem;
@@ -309,11 +309,11 @@ section {
 
 .project-card img {
   align-self: center;
-  width: 260px;
+  max-width: 250px;
   padding-bottom: 1rem;
 }
 
-.project-card h3 {
+.project-card h5 {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
