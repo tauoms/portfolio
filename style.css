@@ -270,6 +270,10 @@ main p {
   font-weight: 300;
 }
 
+.weightup {
+  font-weight: 600;
+}
+
 /* ----- Section ----- */
 
 section {
