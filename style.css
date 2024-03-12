@@ -190,7 +190,6 @@ header h3 {
 }
 
 .welcome-text h2:first-child {
-  /* align-self: flex-start; */
   position: relative;
   top: 33px;
   right: 175.45px;
@@ -198,7 +197,6 @@ header h3 {
 }
 
 .welcome-text h2:nth-child(2) {
-  /* align-self: flex-end; */
   position: relative;
   animation: rise 2.5s ease-out 0.3s 1 backwards;
 
@@ -616,6 +614,21 @@ footer h1 {
 /* --- Media queries --- */
 
 @media (max-width: 800px) {
+  #top-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0 0 1.5rem;
+  }
+
+  .header-name {
+    flex: 4;
+  }
+
+  nav {
+    flex: 1;
+  }
+
   nav ul {
     display: none;
   }
@@ -653,5 +666,55 @@ footer h1 {
 
   nav li:hover {
     border-bottom: none;
+  }
+
+  .welcome-text h2 {
+    font-size: 50px;
+  }
+
+  .welcome-text h2:first-child {
+    position: relative;
+    top: 22.5px;
+    right: 83px;
+    animation: drop 2.5s ease-out 1s 1 backwards;
+  }
+
+  .welcome-text h2:nth-child(2) {
+    position: relative;
+    left: 44.2px;
+    animation: rise 2.5s ease-out 0.3s 1 backwards;
+  }
+
+  @keyframes drop {
+    0% {
+      top: -30px;
+      opacity: 0;
+    }
+    100% {
+      top: 22.5px;
+      opacity: 1;
+    }
+  }
+
+  header h3 {
+    padding: 5rem 0;
+    font-size: 30px;
+    margin-left: 2rem;
+  }
+
+  footer h1 {
+    font-size: 30px;
+    color: #9aaca3;
+    line-height: 1.5;
+    font-weight: 300;
+    padding: 0 1rem;
+    margin: 1rem 0 14rem;
+  }
+  #back-to-top {
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    transition: 0.3s;
+    /* mix-blend-mode: exclusion; */
   }
 }
