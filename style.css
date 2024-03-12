@@ -65,7 +65,7 @@ header {
 }
 
 .header-name {
-  flex: 1;
+  flex: 3;
   margin-right: 30px;
 }
 
@@ -618,7 +618,7 @@ footer h1 {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 1.5rem 0 0 1.5rem;
+    padding: 1rem 0 0 1rem;
   }
 
   .header-name {
@@ -638,24 +638,26 @@ footer h1 {
   ul.responsive {
     display: block;
     position: absolute;
-    top: 100px;
-    right: -200px;
+    top: 50px;
+    right: 20px;
     text-align: right;
     animation: mobmenuanim 0.6s ease-out forwards;
   }
 
   @keyframes mobmenuanim {
     0% {
-      right: -200px;
+      top: -200px;
+      opacity: 0;
     }
     100% {
-      right: 0;
+      top: 50px;
+      opacity: 1;
     }
   }
 
   ul.responsive li {
     display: block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
   }
 
   nav a {
@@ -700,6 +702,10 @@ footer h1 {
     padding: 5rem 0;
     font-size: 30px;
     margin-left: 2rem;
+  }
+
+  .text-container {
+    padding: 1.5rem 1.1rem;
   }
 
   footer h1 {
