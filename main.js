@@ -24,6 +24,8 @@ const scrollFunction = () => {
     }
   }
 
+  // Throttle function from stackoverflow: https://stackoverflow.com/questions/12009367/javascript-event-handling-scroll-event-with-a-delay
+  
   function throttle(func, timeFrame) {
     let lastTime = 0;
     return function () {
