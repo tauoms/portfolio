@@ -77,7 +77,6 @@ nav {
   display: flex;
   flex: 4;
   justify-content: flex-end;
-  padding-right: 20px;
 }
 
 nav ul {
@@ -87,6 +86,7 @@ nav ul {
   flex-wrap: wrap;
   gap: 2rem;
   list-style: none;
+  padding-right: 1rem;
 }
 
 nav a {
@@ -627,6 +627,15 @@ footer h1 {
 
   nav {
     flex: 1;
+    position: fixed;
+    top: 1.5rem;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav i {
+    padding-right: 1rem;
   }
 
   nav ul {
@@ -635,13 +644,21 @@ footer h1 {
   .mobile {
     display: block;
   }
+
   ul.responsive {
     display: block;
     position: absolute;
+    width: 100%;
     top: 50px;
-    right: 20px;
-    text-align: right;
+    text-align: center;
     animation: mobmenuanim 0.6s ease-out forwards;
+  }
+
+  ul.responsive li {
+    display: block;
+    padding: 1rem;
+    background-color: #1c221f;
+    margin: 0.2rem 0;
   }
 
   @keyframes mobmenuanim {
@@ -658,6 +675,7 @@ footer h1 {
   ul.responsive li {
     display: block;
     padding: 0.5rem 0;
+    margin-left: 1rem;
   }
 
   nav a {
@@ -676,7 +694,7 @@ footer h1 {
 
   .welcome-text h2:first-child {
     position: relative;
-    top: 22.5px;
+    top: 23px;
     right: 83px;
     animation: drop 2.5s ease-out 1s 1 backwards;
   }
@@ -693,7 +711,7 @@ footer h1 {
       opacity: 0;
     }
     100% {
-      top: 22.5px;
+      top: 23px;
       opacity: 1;
     }
   }
