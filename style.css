@@ -642,6 +642,7 @@ footer h1 {
   nav ul {
     display: none;
   }
+
   .mobile {
     display: block;
   }
@@ -657,26 +658,19 @@ footer h1 {
 
   ul.responsive li {
     display: block;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #1c221f;
-    margin: 0.2rem 0;
+    margin-left: 1rem;
+    margin-top: 2px;
   }
 
   @keyframes mobmenuanim {
     0% {
       top: -200px;
-      opacity: 0;
     }
     100% {
       top: 50px;
-      opacity: 1;
     }
-  }
-
-  ul.responsive li {
-    display: block;
-    padding: 0.5rem 0;
-    margin-left: 1rem;
   }
 
   nav a {
