@@ -1,7 +1,7 @@
 const backToTopBtn = document.querySelector('#back-to-top');
 const mobileBtn = document.querySelector('.mobile');
 const navUl = document.querySelector('nav ul');
-const menuItems = document.querySelectorAll('nav ul li a');
+const menuItems = document.querySelectorAll('nav ul a');
 
 const getToTop = () => {
     document.body.scrollTop = 0;
@@ -25,7 +25,7 @@ const scrollFunction = () => {
   }
 
   // Throttle function from stackoverflow: https://stackoverflow.com/questions/12009367/javascript-event-handling-scroll-event-with-a-delay
-  
+
   function throttle(func, timeFrame) {
     let lastTime = 0;
     return function () {
@@ -47,6 +47,11 @@ window.onscroll = () => throttledScrollFunction();
 const toggleMobMenu = () => {
     navUl.classList.toggle('responsive')
   }
+
+menuItems.forEach(item => item.addEventListener('click', toggleMobMenu));
+
+
+// End greeting
 
 const greetingOutput = document.querySelector('#greeting');
 
