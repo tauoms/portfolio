@@ -8,6 +8,40 @@ const getToTop = () => {
     document.documentElement.scrollTop = 0;
 } 
 
+// Scroll function
+
+const scrollFunction = () => {
+    
+    if (
+        document.body.scrollTop > 400 || 
+        document.documentElement.scrollTop > 400) {
+      backToTopBtn.style.visibility = 'visible';
+      backToTopBtn.style.opacity = '1';
+
+    } else {
+      backToTopBtn.style.visibility = 'hidden';
+      backToTopBtn.style.opacity = '0';
+    }
+  }
+
+  function throttle(func, timeFrame) {
+    let lastTime = 0;
+    return function () {
+        const now = new Date();
+        if (now - lastTime >= timeFrame) {
+            func();
+            lastTime = now;
+        }
+    };
+  }
+
+const throttledScrollFunction = throttle(scrollFunction, 300);
+
+window.onscroll = () => throttledScrollFunction();
+
+
+// Mobile menu
+
 const toggleMobMenu = () => {
     navUl.classList.toggle('responsive')
   }
