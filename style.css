@@ -560,28 +560,6 @@ footer h1 {
   color: #c7d1cc;
 }
 
-/* .project-card-test {
-  display: flex;
-  background-image: url(images/image03.webp);
-  background-size: cover;
-  width: 300px;
-  height: 200px;
-}
-
-.project-card-test h2,
-.project-card-test h3 {
-  font-size: 16px;
-  background-color: #28332e;
-  opacity: 0.7;
-  padding: 4px;
-}
-
-.project-card-test h3 {
-  font-size: 14px;
-  align-self: flex-end;
-  justify-self: flex-end;
-} */
-
 .visually-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
