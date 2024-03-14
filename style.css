@@ -19,6 +19,7 @@
   --skill-green-gradient: linear-gradient(0deg, #28332e -10%, #6e8779 80%);
   --skill-purple-gradient: linear-gradient(0deg, #312833 -10%, #876e87 80%);
 }
+
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
@@ -86,10 +87,6 @@ header {
   margin-right: 30px;
 }
 
-.header-name a:hover {
-  text-decoration: none;
-}
-
 nav {
   display: flex;
   flex: 4;
@@ -134,15 +131,6 @@ nav li:hover {
   align-items: center;
   padding: 14rem 0;
   /* animation: fadein 1s ease-out; */
-}
-
-@keyframes fadein {
-  0% {
-    filter: blur(5rem);
-  }
-  100% {
-    filter: blur(0);
-  }
 }
 
 .icons {
@@ -225,13 +213,11 @@ header h3 {
   0% {
     top: -30px;
     /* right: 375.4px; */
-
     opacity: 0;
   }
   100% {
     top: 33px;
     /* right: 175.4px; */
-
     opacity: 1;
   }
 }
