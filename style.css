@@ -486,46 +486,6 @@ footer h2 {
   text-align: center;
 }
 
-/* ----- Form ----- */
-
-.formcontainer {
-  width: 300px;
-  margin: 0 auto;
-}
-
-form {
-  margin: 0 30px 30px 0;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  display: inline-block;
-  background-color: #d1d1d1;
-  width: 300px;
-  border: 0;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-input[type="submit"] {
-  background-color: #d1d1d1;
-  font-family: inherit;
-  font-size: 16px;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-label {
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: 0.3px;
-  color: #d1d1d1;
-  margin-bottom: 4px;
-}
-
 #back-to-top {
   visibility: hidden;
   position: fixed;
@@ -714,4 +674,96 @@ footer h1 {
     transition: 0.3s;
     /* mix-blend-mode: exclusion; */
   }
+}
+
+/* --- TO BE REMOVED AFTER EVALUATION --- */
+
+/* --- Gallery --- */
+
+#gallery {
+  display: grid;
+  grid-template-areas:
+    "elk rodent meerkat"
+    "elk turtle meerkat"
+    "parrot raccoon tiger"
+    "parrot . tiger";
+  max-width: 900px;
+  grid-auto-rows: 1fr;
+  margin: 0 auto;
+  gap: 0.4rem;
+}
+
+#gallery img {
+  width: 100%;
+  /* max-height: 400px; */
+  height: 100%;
+  object-fit: cover;
+}
+
+.elk {
+  grid-area: elk;
+}
+
+.raccoon {
+  grid-area: raccoon;
+}
+
+.meerkat {
+  grid-area: meerkat;
+}
+
+.parrot {
+  grid-area: parrot;
+}
+
+.rodent {
+  grid-area: rodent;
+}
+
+.tiger {
+  grid-area: tiger;
+}
+
+.turtle {
+  grid-area: turtle;
+}
+
+/* ----- Form ----- */
+
+.formcontainer {
+  width: 300px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 0 30px 30px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: inline-block;
+  background-color: #d1d1d1;
+  width: 300px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #d1d1d1;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  color: #d1d1d1;
+  margin-bottom: 4px;
 }
