@@ -356,6 +356,7 @@ section {
 
 .container {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -428,7 +429,6 @@ section {
 }
 
 .skill-container {
-  display: block;
   width: 100%;
   background: linear-gradient(0deg, #28332e 0%, #181e1c 100%);
   border-radius: 25px;
@@ -560,7 +560,7 @@ footer h1 {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 1rem 0 0 1rem;
+    padding: 1.2rem 0 0 1rem;
   }
 
   .header-name {
@@ -662,6 +662,10 @@ footer h1 {
     padding: 1.5rem 1.1rem;
   }
 
+  .skill-card {
+    scale: 1;
+  }
+
   footer h1 {
     font-size: 30px;
     color: var(--main-header-color);
@@ -671,10 +675,11 @@ footer h1 {
     margin: 1rem 0 14rem;
   }
   #back-to-top {
-    position: fixed;
+    display: none;
+    /* position: fixed;
     bottom: 0.5rem;
     left: 0.5rem;
-    transition: 0.3s;
+    transition: 0.3s; */
     /* mix-blend-mode: exclusion; */
   }
 }
