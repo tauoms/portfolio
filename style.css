@@ -76,10 +76,10 @@ header {
   background: linear-gradient(
     0deg,
     var(--bg-green) 0%,
-    var(--bg-black) calc(60% + 1px)
+    var(--bg-black) calc(50% + 1px)
   );
   background-size: 220% 220%;
-  animation: grad 4s 2.2s ease forwards;
+  animation: grad 4.2s 2.1s ease forwards;
   /* -webkit-animation: grad 5s ease forwards;
   -moz-animation: grad 5s ease forwards; */
 }
