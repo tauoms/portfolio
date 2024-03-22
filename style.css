@@ -73,7 +73,46 @@ header {
   flex-direction: column;
   align-items: center;
   background: var(--bg-black);
-  background: linear-gradient(0deg, var(--bg-green) 0%, var(--bg-black) 60%);
+  background: linear-gradient(
+    0deg,
+    var(--bg-green) 0%,
+    var(--bg-black) calc(60% + 1px)
+  );
+  background-size: 220% 220%;
+  animation: grad 4s 2.2s ease forwards;
+  /* -webkit-animation: grad 5s ease forwards;
+  -moz-animation: grad 5s ease forwards; */
+}
+
+/* @-webkit-keyframes grad {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes grad {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  } */
+
+@keyframes grad {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% calc(99.9% + 1px);
+  }
 }
 
 #top-row {
@@ -139,6 +178,7 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   gap: 60px;
+  margin-bottom: 4rem;
 }
 
 .icons a {
@@ -288,7 +328,11 @@ section {
 
 .first {
   background: var(--bg-black);
-  background: linear-gradient(0deg, var(--bg-black) 0%, var(--bg-green) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--bg-black) 0%,
+    var(--bg-green) calc(99.9% + 1px)
+  );
 }
 
 .second {
