@@ -8,15 +8,15 @@ const getToTop = () => {
     document.documentElement.scrollTop = 0;
 } 
 
-// Scroll function
+// Scroll function:
 
 const scrollFunction = () => {
     
     if (
         document.body.scrollTop > 400 || 
         document.documentElement.scrollTop > 400) {
-      backToTopBtn.style.visibility = 'visible';
-      backToTopBtn.style.opacity = '1';
+          backToTopBtn.style.visibility = 'visible';
+          backToTopBtn.style.opacity = '1';
 
     } else {
       backToTopBtn.style.visibility = 'hidden';
@@ -42,7 +42,7 @@ const throttledScrollFunction = throttle(scrollFunction, 300);
 window.onscroll = () => throttledScrollFunction();
 
 
-// Mobile menu
+// Mobile menu:
 
 const toggleMobMenu = () => {
     navUl.classList.toggle('responsive')
@@ -51,7 +51,7 @@ const toggleMobMenu = () => {
 menuItems.forEach(item => item.addEventListener('click', toggleMobMenu));
 
 
-// End greeting
+// Footer greeting:
 
 const greetingOutput = document.querySelector('#greeting');
 
@@ -59,7 +59,7 @@ function greetVisitor () {
     const today = new Date();
     const currentDay = today.getDay();
     const currentHour = today.getHours();
-    let todIndex;
+    let todIndex = 0;
 
     const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const timesOfDay = ['morning', 'afternoon', 'evening', 'night'];

@@ -2,6 +2,7 @@
   --font: Inter, sans-serif;
   font-family: var(--font);
   font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+
   --bg-black: #1c221f;
   --bg-green: #384741;
   --bg-purple: #50304e;
