@@ -130,7 +130,7 @@ nav li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0;
+  margin: 10rem 2rem;
   /* animation: fadein 1s ease-out; */
 }
 
