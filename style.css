@@ -619,6 +619,7 @@ footer h1 {
     right: 0;
     width: 100%;
     z-index: 1;
+    will-change: transform;
   }
 
   nav i {
@@ -639,6 +640,7 @@ footer h1 {
     width: 100%;
     top: 50px;
     text-align: center;
+    will-change: position;
     animation: mobmenuanim 0.6s ease-in-out forwards;
   }
 
