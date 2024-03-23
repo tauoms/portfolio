@@ -72,6 +72,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
   background: var(--bg-black);
   background: linear-gradient(
     0deg,
@@ -79,7 +80,7 @@ header {
     var(--bg-black) calc(50% + 1px)
   );
   background-size: 220% 220%;
-  animation: grad 4.2s 2.1s ease forwards;
+  animation: grad 4.2s 2.2s ease forwards;
   /* -webkit-animation: grad 5s ease forwards;
   -moz-animation: grad 5s ease forwards; */
 }
@@ -169,7 +170,7 @@ nav li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10rem 0.5rem;
+  margin: 18rem 0.5rem;
   /* animation: fadein 1s ease-out; */
 }
 
@@ -285,6 +286,7 @@ header h3 {
 
 #contact {
   scroll-margin-top: 400px;
+  margin-bottom: 20rem;
 }
 
 #about {
@@ -327,6 +329,7 @@ section {
 }
 
 .first {
+  padding: 1rem 0 8rem;
   background: var(--bg-black);
   background: linear-gradient(
     0deg,
