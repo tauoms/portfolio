@@ -5,7 +5,7 @@
 
   --bg-black: #1c221f;
   --bg-green: #384741;
-  --bg-purple: #50304e;
+  --bg-purple: #4d3f50;
   --font-color-light: #c7d1cc;
   --link-color: #dde3e0;
   --link-hover-color: #dde3e0;
@@ -80,7 +80,7 @@ header {
     var(--bg-black) calc(50% + 1px)
   );
   background-size: 220% 220%;
-  animation: grad 4.2s 2.2s ease forwards;
+  animation: grad 3s 2.2s linear forwards;
   /* -webkit-animation: grad 5s ease forwards;
   -moz-animation: grad 5s ease forwards; */
 }
@@ -427,7 +427,7 @@ section {
   display: flex;
   flex-direction: column;
   background: #21212140;
-  box-shadow: 0 8px 32px 0 #5e22485e;
+  box-shadow: 0 0px 60px 0 #4d3f47;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -461,7 +461,7 @@ section {
   background: var(--skill-green-gradient);
   border-radius: 10px;
   padding: 10px 20px;
-  box-shadow: 0 0 32px rgba(94, 34, 72, 0.37);
+  box-shadow: 0 4px 72px 4px #4d3f47;
 }
 
 .skill-card:nth-child(even) {
