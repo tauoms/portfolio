@@ -508,15 +508,15 @@ section {
 
 .html,
 .css {
-  width: 70%;
+  width: 80%;
 }
 
 .js {
-  width: 40%;
+  width: 70%;
 }
 
 .php {
-  width: 30%;
+  width: 50%;
 }
 
 /* ----- Footer ----- */
