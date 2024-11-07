@@ -376,10 +376,10 @@ section {
 
 .project-card img {
   align-self: center;
-  width: auto;
   height: 200px;
-  max-width: 250px;
+  width: 100%;
   object-fit: cover;
+  object-position: left top;
   padding-bottom: 1rem;
   display: block;
 }
