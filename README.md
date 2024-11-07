@@ -6,6 +6,10 @@ This is my personal portfolio website. This is the first version, built with sim
 
 [https://tauoms.github.io/portfolio/](https://tauoms.github.io/portfolio/)
 
+## Screenshot
+
+![Screenshot 2024-11-06 at 20 08 57](https://github.com/user-attachments/assets/42d653bc-10b4-4392-925f-c104ee9b6bac)
+
 ## Features
 
 - Responsive Design: The website is optimized for both desktop and mobile devices.
