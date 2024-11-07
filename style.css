@@ -399,13 +399,14 @@ section {
 }
 
 .project-card p {
-  margin: 1rem 0 1rem;
+  margin: 1.5rem 0 1.5rem;
   line-height: 1.3;
   /* font-size: smaller; */
 }
 
 .project-card a {
-  display: block;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .tech {
@@ -748,5 +749,10 @@ footer h1 {
 
   .project-card {
     width: 90%;
+  }
+
+  .project-card img {
+    height: 300px;
+    width: 100%;
   }
 }
