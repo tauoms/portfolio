@@ -355,7 +355,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 4rem;
 }
 
 .project-card {
@@ -373,7 +373,6 @@ section {
     box-shadow 0.3s ease;
   border: solid 2px #33423b;
   border-radius: 20px;
-  padding: 16px 20px;
   overflow: hidden;
 }
 
@@ -388,8 +387,13 @@ section {
   width: 100%;
   object-fit: cover;
   object-position: left top;
-  padding-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  padding: 0;
   display: block;
+}
+
+.project-text-content {
+  padding: 1rem;
 }
 
 .project-card h5 {
@@ -404,7 +408,7 @@ section {
   /* font-size: smaller; */
 }
 
-.project-card a {
+.project-links a {
   display: inline-block;
   margin-right: 1rem;
 }
